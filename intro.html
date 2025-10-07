@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id ="start">JS is dynamic</p>
+    <p id="demo">this is DOM</p>
+    <p id="value"></p>
+   <button onclick="document.getElementById('start').innerHTML='This is JS'">click</button>
+   
+   <br>
+   <!-- HTML DOM methods are actions you can perform on html elements -->
+    <!-- HTML DOM properties are values of html elements that you can set or change -->
+     <br>
+     
+     <script>
+        const element=document.getElementsByTagName("p");
+        document.getElementById("value").innerHTML=
+        "The text in first paragraph (index 0) is:" + element[1].innerHTML;
+     </script>
+
+     <br>
+     <p class="intro">Hello world</p>
+     <p class="intro">An example</p>
+     <p id="intro"></p>
+     <br>
+     <p class="try">JS World</p>
+     <p class="try">Example 2</p>
+     <p id="try"></p>
+<!-- 
+     <script>
+        const x= document.getElementsByClassName("intro");
+        document.getElementById("intro").innerHTML=
+        "The text in first paragraph (index 0) is:" + x[0].innerHTML;
+     </script> -->
+     <script src="docs.js"></script>
+    
+
+</body>
+</html>
