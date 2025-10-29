@@ -13,13 +13,35 @@
 // let keyword is used to declare variables that can be reassigned
 let name = "John";
 // console.log(name);
-document.getElementById('demo').innerHTML=name;
+document.getElementById("demo").innerHTML = name;
 name = "Doe";
 // console.log(name);
-document.getElementById('trial').innerHTML=name;
+document.getElementById("trial").innerHTML = name;
 // const keyword is used to declare variables that cannot be reassigned
 const pi = 3.14;
 console.log(pi);
 // document.getElementById('try').innerHTML=pi;
 // pi = 3.15; // this will give an error
 // console.log(pi);
+
+// let,const are block scoped
+// let variable is only accessible within the block it is defined
+{
+  let city = "New York";
+  console.log(city); // New York
+}
+
+// console.log(city); // error: city is not defined
+
+// const variable is also only accessible within the block it is defined
+{
+  const country = "USA";
+  console.log(country); // USA
+}
+// console.log(country); // error: country is not defined
+
+const $city ="Nairobi";
+console.log($city);
+document.getElementById("city").innerHTML=$city;
+// const 1city="Nairobi"; // error: variable name cannot start with a number
+// console.log(1city);
